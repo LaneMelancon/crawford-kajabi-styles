@@ -5,8 +5,8 @@
   3. Design Tokens
   4. Font Face Declarations
   5. Base Styles
-  6. Typography (H1 - H6, Paragraph)
-  7. Buttons & CTAs
+  6. Typography (H1 - H6, Eyebrow/P2/P)
+  7. Buttons
   ───────────────────────────────────────────
 */
 
@@ -55,7 +55,7 @@ html {
 	--color-text: var(--color-gray-300);
 
 	/* Fonts */
-	--font-normal: 'GothamBook', sans-serif;
+	--font-base: 'GothamBook', sans-serif;
 	--font-medium: 'GothamMedium', sans-serif;
 	--font-bold: 'GothamBold', sans-serif;
 	--font-accent: 'Montserrat', sans-serif;
@@ -112,7 +112,7 @@ html {
 	}
 }
 
-/* Token overrides — Mobile (L) */
+/* Token Overrides — Mobile (L) */
 @media screen and (max-width: 767px) {
 	:root {
 		--text-3xl: 2.25rem;
@@ -150,10 +150,10 @@ html {
 	font-style: normal;
 }
 
-/* ── Base styles ── */
+/* ── Base Styles ── */
 body {
 	color: var(--color-text);
-	font-family: var(--font-normal);
+	font-family: var(--font-base);
 	font-size: var(--text-base);
 	line-height: var(--leading-150);
 }
@@ -163,6 +163,7 @@ h1,
 .h1 {
 	font-family: var(--font-bold);
 	font-size: var(--text-3xl);
+	font-weight: var(--weight-700);
 	line-height: var(--leading-115);
 	letter-spacing: var(--tracking-h1);
 }
@@ -172,6 +173,7 @@ h2,
 .h2 {
 	font-family: var(--font-bold);
 	font-size: var(--text-xl);
+	font-weight: var(--weight-700);
 	line-height: var(--leading-115);
 	letter-spacing: var(--tracking-h2);
 }
@@ -181,6 +183,7 @@ h3,
 .h3 {
 	font-family: var(--font-accent);
 	font-size: var(--text-lg);
+	font-weight: var(--weight-600);
 	line-height: var(--leading-125);
 	letter-spacing: var(--tracking-h3);
 }
@@ -190,6 +193,7 @@ h4,
 .h4 {
 	font-family: var(--font-accent);
 	font-size: var(--text-md);
+	font-weight: var(--weight-500);
 	line-height: var(--leading-115);
 	letter-spacing: var(--tracking-h4);
 }
@@ -197,39 +201,43 @@ h4,
 /* ── H5 (Eyebrow/Kicker) ── */
 h5,
 .h5 {
+	margin-bottom: 0.75rem;
 	font-family: var(--font-accent);
 	font-size: var(--text-base);
+	font-weight: var(--weight-600);
 	line-height: var(--leading-125);
 	letter-spacing: var(--tracking-eyebrow);
 	text-transform: uppercase;
 	color: var(--color-primary-100);
-	margin-bottom: 0.75rem;
 }
 
 /* ── H6 (Paragraph 2) ── */
 h6 {
-	font-family: var(--font-normal);
+	font-family: var(--font-base);
 	font-size: var(--text-md);
+	font-weight: var(--weight-400);
 	line-height: var(--leading-150);
+	color: var(--color-primary-100);
 }
 
 /* ── Paragraph ── */
 p {
-	font-family: var(--font-normal);
+	font-family: var(--font-base);
 	font-size: var(--text-base);
+	font-weight: var(--weight-400);
 	line-height: var(--leading-150);
 }
 
-/* ── Buttons & CTAs ── */
+/* ── Buttons ── */
 button,
 .btn,
 a.btn {
+	padding: 0.75rem 1.5rem !important;
 	font-family: var(--font-accent) !important;
-	font-weight: var(--weight-600) !important;
 	font-size: var(--text-base) !important;
+	font-weight: var(--weight-600) !important;
 	line-height: var(--leading-100) !important;
 	background-color: var(--color-primary-100) !important;
 	border-radius: var(--radius-pill) !important;
 	border: none !important;
-	padding: 0.75rem 1.5rem !important;
 }
