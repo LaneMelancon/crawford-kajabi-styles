@@ -236,3 +236,10 @@ a.btn {
 	border-radius: var(--radius-pill) !important;
 	border: none !important;
 }
+
+/* ── Component Styles ── */
+
+/* Header - Desktop */
+.header__content--desktop {
+	padding: 4px 0px;
+}
