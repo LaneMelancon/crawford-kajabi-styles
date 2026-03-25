@@ -1,0 +1,242 @@
+/*
+  ── Table of Contents ──────────────────────
+  1. Google Fonts Import
+  2. Fluid Responsive Text
+  3. Design Tokens
+  4. Font Face Declarations
+  5. Base Styles
+  6. Typography (H1 - H6, Paragraph)
+  7. Buttons & CTAs
+  ───────────────────────────────────────────
+*/
+
+/* ── Montserrat Google Fonts Import ── */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
+
+/* ── Fluid Responsive Text ── */
+html {
+	font-size: 1rem;
+}
+
+@media screen and (max-width: 1920px) {
+	html {
+		font-size: calc(0.4833153928955866rem + 0.4305705059203445vw);
+	}
+}
+
+@media screen and (max-width: 991px) {
+	html {
+		font-size: calc(0.758056640625rem + 0.390625vw);
+	}
+}
+
+@media screen and (max-width: 479px) {
+	html {
+		font-size: calc(0.7496077405857741rem + 0.6276150627615062vw);
+	}
+}
+
+/* ── Design Tokens ── */
+:root {
+	/* Colors */
+	--color-primary-100: #209fe1;
+	--color-primary-200: #32a7e3;
+
+	--color-secondary-100: #12426f;
+	--color-secondary-200: #134977;
+
+	--color-white-100: #fff;
+	--color-white-200: #f0f4f5;
+
+	--color-gray-100: #999;
+	--color-gray-200: #666;
+	--color-gray-300: #262626;
+
+	--color-text: var(--color-gray-300);
+
+	/* Fonts */
+	--font-normal: 'GothamBook', sans-serif;
+	--font-medium: 'GothamMedium', sans-serif;
+	--font-bold: 'GothamBold', sans-serif;
+	--font-accent: 'Montserrat', sans-serif;
+
+	/* Font Sizes — Desktop */
+	--text-xs: 0.75rem;
+	--text-sm: 0.875rem;
+	--text-base: 1rem;
+	--text-md: 1.125rem;
+	--text-lg: 1.5rem;
+	--text-xl: 2.25rem;
+	--text-2xl: 2.85rem;
+	--text-3xl: 3.25rem;
+
+	/* Font Weights */
+	--weight-400: 400;
+	--weight-500: 500;
+	--weight-600: 600;
+	--weight-700: 700;
+
+	/* Line Heights */
+	--leading-100: 1;
+	--leading-105: 1.05;
+	--leading-115: 1.15;
+	--leading-125: 1.25;
+	--leading-150: 1.5;
+	--leading-170: 1.7;
+
+	/* Letter Spacing */
+	--tracking-h1: -0.08rem;
+	--tracking-h2: -0.06rem;
+	--tracking-h3: -0.03rem;
+	--tracking-h4: -0.03rem;
+	--tracking-eyebrow: 0.05rem;
+
+	/* Border Radius */
+	--radius-pill: 100vw;
+	--radius-050: 0.5rem;
+	--radius-075: 0.75rem;
+	--radius-100: 1rem;
+	--radius-125: 1.25rem;
+	--radius-175: 1.75rem;
+	--radius-200: 2rem;
+}
+
+/* Token Overrides — Tablet */
+@media screen and (max-width: 991px) {
+	:root {
+		--text-3xl: 2.85rem;
+		--text-2xl: 2rem;
+		--text-xl: 1.875rem;
+		--text-lg: 1.25rem;
+		--text-xs: 0.75rem;
+	}
+}
+
+/* Token overrides — Mobile (L) */
+@media screen and (max-width: 767px) {
+	:root {
+		--text-3xl: 2.25rem;
+		--text-2xl: 1.875rem;
+		--text-xl: 1.75rem;
+		--text-lg: 1.125rem;
+	}
+}
+
+/* ── Font Face Declarations ── */
+/* Gotham Book */
+@font-face {
+	font-family: 'GothamBook';
+	src: url('https://brandon-crawford.mykajabi.com/resource_redirect/downloads/file-uploads/sites/2148737121/themes/2164208892/downloads/072141-f5b5-e4af-a304-756fe722cbca_GothamBook.ttf')
+		format('truetype');
+	font-weight: var(--weight-400);
+	font-style: normal;
+}
+
+/* Gotham Medium */
+@font-face {
+	font-family: 'GothamMedium';
+	src: url('https://brandon-crawford.mykajabi.com/resource_redirect/downloads/file-uploads/sites/2148737121/themes/2164208892/downloads/7650231-7a57-836e-ccf0-d52aaddcd7_GothamMedium.ttf')
+		format('truetype');
+	font-weight: var(--weight-500);
+	font-style: normal;
+}
+
+/* Gotham Bold */
+@font-face {
+	font-family: 'GothamBold';
+	src: url('https://brandon-crawford.mykajabi.com/resource_redirect/downloads/file-uploads/sites/2148737121/themes/2164208892/downloads/c116d0d-3650-ca15-8f25-d00576aeded0_GothamBold.ttf')
+		format('truetype');
+	font-weight: var(--weight-700);
+	font-style: normal;
+}
+
+/* ── Base styles ── */
+body {
+	color: var(--color-text);
+	font-family: var(--font-normal);
+	font-size: var(--text-base);
+	line-height: var(--leading-150);
+}
+
+/* ── H1 ── */
+h1,
+.h1 {
+	font-family: var(--font-bold);
+	font-weight: var(--weight-700);
+	font-size: var(--text-3xl);
+	line-height: var(--leading-115);
+	letter-spacing: var(--tracking-h1);
+}
+
+/* ── H2 ── */
+h2,
+.h2 {
+	font-family: var(--font-bold);
+	font-weight: var(--weight-700);
+	font-size: var(--text-xl);
+	line-height: var(--leading-115);
+	letter-spacing: var(--tracking-h2);
+}
+
+/* ── H3 ── */
+h3,
+.h3 {
+	font-family: var(--font-accent);
+	font-weight: var(--weight-600);
+	font-size: var(--text-lg);
+	line-height: var(--leading-125);
+	letter-spacing: var(--tracking-h3);
+}
+
+/* ── H4 ── */
+h4,
+.h4 {
+	font-family: var(--font-accent);
+	font-weight: var(--weight-600);
+	font-size: var(--text-md);
+	line-height: var(--leading-115);
+	letter-spacing: var(--tracking-h4);
+}
+
+/* ── H5 (Eyebrow/Kicker) ── */
+h5,
+.h5 {
+	font-family: var(--font-accent);
+	font-weight: var(--weight-600);
+	font-size: var(--text-base);
+	line-height: var(--leading-125);
+	letter-spacing: var(--tracking-eyebrow);
+	text-transform: uppercase;
+	color: var(--color-primary-100);
+	margin-bottom: 0.75rem;
+}
+
+/* ── H6 (Paragraph 2) ── */
+h6 {
+	font-family: var(--font-normal);
+	font-weight: var(--weight-400);
+	font-size: var(--text-md);
+	line-height: var(--leading-150);
+}
+
+/* ── Paragraph ── */
+p {
+	font-family: var(--font-normal);
+	font-weight: var(--weight-400);
+	font-size: var(--text-base);
+	line-height: var(--leading-150);
+}
+
+/* ── Buttons & CTAs ── */
+button,
+.btn,
+a.btn {
+	font-family: var(--font-accent) !important;
+	font-weight: var(--weight-600) !important;
+	font-size: var(--text-base) !important;
+	line-height: var(--leading-100) !important;
+	background-color: var(--color-primary-100) !important;
+	border-radius: var(--radius-pill) !important;
+	border: none !important;
+	padding: 0.75rem 1.5rem !important;
+}
