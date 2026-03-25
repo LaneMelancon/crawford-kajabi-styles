@@ -146,7 +146,7 @@ html {
 	font-family: 'GothamBold';
 	src: url('https://brandon-crawford.mykajabi.com/resource_redirect/downloads/file-uploads/sites/2148737121/themes/2164208892/downloads/c116d0d-3650-ca15-8f25-d00576aeded0_GothamBold.ttf')
 		format('truetype');
-	font-weight: var(--weight-700) !important;
+	font-weight: var(--weight-700);
 	font-style: normal;
 }
 
@@ -163,7 +163,6 @@ h1,
 .h1 {
 	font-family: var(--font-bold);
 	font-size: var(--text-3xl);
-	/* font-weight: var(--weight-700); */
 	line-height: var(--leading-115);
 	letter-spacing: var(--tracking-h1);
 }
@@ -173,7 +172,6 @@ h2,
 .h2 {
 	font-family: var(--font-bold);
 	font-size: var(--text-xl);
-	font-weight: var(--weight-700);
 	line-height: var(--leading-115);
 	letter-spacing: var(--tracking-h2);
 }
@@ -183,7 +181,6 @@ h3,
 .h3 {
 	font-family: var(--font-accent);
 	font-size: var(--text-lg);
-	font-weight: var(--weight-600);
 	line-height: var(--leading-125);
 	letter-spacing: var(--tracking-h3);
 }
@@ -193,7 +190,6 @@ h4,
 .h4 {
 	font-family: var(--font-accent);
 	font-size: var(--text-md);
-	font-weight: var(--weight-500);
 	line-height: var(--leading-115);
 	letter-spacing: var(--tracking-h4);
 }
@@ -208,7 +204,6 @@ h5,
 	line-height: var(--leading-125);
 	letter-spacing: var(--tracking-eyebrow);
 	text-transform: uppercase;
-	color: var(--color-primary-100);
 }
 
 /* ── H6 (Paragraph 2) ── */
@@ -232,9 +227,9 @@ p {
 button,
 .btn,
 a.btn {
-	padding: 0.75rem 1.5rem !important;
+	padding: 1rem 1.75rem !important;
 	font-family: var(--font-accent) !important;
-	font-size: var(--text-base) !important;
+	font-size: var(--text-md) !important;
 	font-weight: var(--weight-600) !important;
 	line-height: var(--leading-100) !important;
 	background-color: var(--color-primary-100) !important;
