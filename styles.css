@@ -224,7 +224,7 @@ p {
 }
 
 /* ── Buttons ── */
-button,
+button:not([aria-label='Toggle cart']),
 .btn,
 a.btn {
 	padding: 1rem 1.75rem !important;
