@@ -246,3 +246,9 @@ a.btn {
 .embedded-checkout-price-display__image-container {
 	display: none !important;
 }
+
+/* Offer Price */
+.embedded-checkout-price-display__section
+	.embedded-checkout-price-display__offer {
+	flex: none !important;
+}
