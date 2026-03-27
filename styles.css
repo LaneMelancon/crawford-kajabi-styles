@@ -244,5 +244,5 @@ a.btn {
 
 /* ── Course Offer Checkout ── */
 .embedded-checkout-price-display__image-container {
-	display: none;
+	display: none !important;
 }
