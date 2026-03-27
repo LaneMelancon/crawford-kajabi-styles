@@ -237,9 +237,12 @@ a.btn {
 	border: none !important;
 }
 
-/* ── Component Styles ── */
-
-/* Header - Desktop */
+/* ── Header ── */
 .header__content--desktop {
 	padding: 4px 0px;
+}
+
+/* ── Course Offer Checkout ── */
+.embedded-checkout-price-display__image {
+	display: none;
 }
