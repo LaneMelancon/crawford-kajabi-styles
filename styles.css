@@ -241,14 +241,3 @@ a.btn {
 .header__content--desktop {
 	padding: 4px 0px;
 }
-
-/* ── Course Offer Checkout ── */
-.embedded-checkout-price-display__image-container {
-	display: none !important;
-}
-
-/* Offer Price */
-.embedded-checkout-price-display__section
-	.embedded-checkout-price-display__offer {
-	flex: none !important;
-}
