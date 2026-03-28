@@ -11,4 +11,4 @@ jobs:
     steps:
       - name: Purge jsDelivr cache
         run: |
-          curl -X GET "https://purge.jsdelivr.net/gh/LaneMelancon/crawford-kajabi-styles@main/styles.css"
+          curl -X GET "https://purge.jsdelivr.net/gh/LaneMelancon/crawford-kajabi-styles@latest/styles.css"
