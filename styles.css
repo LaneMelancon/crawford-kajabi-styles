@@ -232,7 +232,7 @@ a.btn {
 	font-size: var(--text-md) !important;
 	font-weight: var(--weight-600) !important;
 	line-height: var(--leading-100) !important;
-	background-color: var(--color-primary-100) !important;
+	background-color: var(--color-primary-200) !important;
 	border-radius: var(--radius-pill) !important;
 	border: none !important;
 }
