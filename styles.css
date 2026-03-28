@@ -224,7 +224,8 @@ p {
 }
 
 /* ── Buttons ── */
-a.btn {
+a.btn,
+.form-btn {
 	padding: 1rem 1.75rem !important;
 	font-family: var(--font-accent) !important;
 	font-size: var(--text-md) !important;
