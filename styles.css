@@ -224,8 +224,6 @@ p {
 }
 
 /* ── Buttons ── */
-button:not([aria-label='Toggle cart'], [raised='false']),
-.btn,
 a.btn {
 	padding: 1rem 1.75rem !important;
 	font-family: var(--font-accent) !important;
@@ -238,8 +236,6 @@ a.btn {
 }
 
 @media screen and (max-width: 767px) {
-	button:not([aria-label='Toggle cart'], [raised='false']),
-	.btn,
 	a.btn {
 		font-size: var(--text-base) !important;
 		padding: 1rem 1.5rem !important;
